@@ -1,10 +1,36 @@
 name: 'Katalon Studio'
 description: 'Execute Katalon Studio'
-#inputs:
-#  theksVersion: #id of input
-#     description: 'Which version of Katalon Studio to run'
-#     required: true
-#     default: ''
+inputs:
+      theksVersion: #id of input
+            description: 'Which version of Katalon Studio to run'
+            required: true
+            default: ''
+            
+      theksLocation:
+            description: 'Location of Katalon Studio on local machine'
+            required: true
+            default: ''
+            
+      theksProjectPath:
+            description: 'Project path to Katalon Studio'
+            required: true
+            default: ''
+            
+      theksArgs:
+            description: 'Arguments to run Katalon Studio Project'
+            required: true
+            default: ''
+            
+      thex11Display:
+            description: 'x11 Display settings'
+            required: true
+            default: ''
+            
+      xvfbConfiguration:
+            description: 'xvfb Configuration settings'
+            required: true
+            default: ''
+
 #outputs:
 
 runs:
