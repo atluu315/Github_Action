@@ -14,7 +14,7 @@ try
     execute(
         '7.4.0',
         '',
-        './simple_project/',
+        'simple_project/simple_project/',
         '-retry=0 -testSuiteCollectionPath="Test Suites/New Test Suite Collection" -apiKey="fdb89052-b651-46fe-ac7c-b7b4b305eb55"',
         '',
         '',
