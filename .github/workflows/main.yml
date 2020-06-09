@@ -20,7 +20,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      
+    #Install packages
+    - name: Install packages
+      run: npm install --save katalon-studio/katalon-agent#v1.4.0
 
     # Runs Katalon Studio Action
     - name: Runs Katalon Studio Action Step
