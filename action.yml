@@ -1,0 +1,12 @@
+name: 'Katalon Studio'
+description: 'Execute Katalon Studio'
+#inputs:
+#  theksVersion: #id of input
+#     description: 'Which version of Katalon Studio to run'
+#     required: true
+#     default: ''
+#outputs:
+
+runs:
+      using: 'node12'
+      main: 'index.js'
