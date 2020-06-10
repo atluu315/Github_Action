@@ -26,9 +26,6 @@ jobs:
     #Install packages
     - name: Install packages
       run: npm install --save katalon-studio/katalon-agent#v1.4.0
-      
-    - name: Echo test
-      run: echo "$GITHUB_WORKSPACE"
 
     # Runs Katalon Studio Action
     - name: Runs Katalon Studio Action Step
@@ -36,5 +33,5 @@ jobs:
       with:
           version: '7.5.5'
           location: ''
-          projectPath: './simple_project/simple_project/bin/simple_project.prj'
+          projectPath: $GITHUB_WORKSPACE/simple_project.prj
           args: '-noSplash -retry=0 -testSuiteCollectionPath="Test Suites/Run All Test Suites" -apiKey= ${{ secrets.API_KEY }} --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY'
