@@ -1,22 +1,20 @@
 const {execute} = require('katalon-cli/src/katalon-studio');
 const core = require('@actions/core');
 
-const user_ksVersion = core.getInput('theksVersion');
-const user_ksLocation = core.getInput('theksLocation');
-const user_ksProjectPath = core.getInput('theksProjectPath');
-const user_ksArgs = core.getInput('theksArgs');
-const user_x11Display = core.getInput('thex11Display');
-const user_xvfbConfiguration = core.getInput('xvfbConfiguration');
+const user_version = core.getInput('version');
+const user_location = core.getInput('location');
+const user_projectPath = core.getInput('projectPath');
+const user_args = core.getInput('args');
 
 try
 {
     execute(
-        user_ksVersion,
-        user_ksLocation,
-        user_ksProjectPath,
-        user_ksArgs,
-        user_x11Display,
-        user_xvfbConfiguration,
+        user_version,
+        user_location,
+        user_projectPath,
+        user_args,
+        '',
+        '',
         {
             info: function()
             {
