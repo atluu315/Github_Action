@@ -28,7 +28,7 @@ jobs:
       run: npm install --save katalon-studio/katalon-agent#v1.4.0
       
     - name: Echo test
-      run: echo $GITHUB_WORKSPACE
+      run: echo "$GITHUB_WORKSPACE"
 
     # Runs Katalon Studio Action
     - name: Runs Katalon Studio Action Step
