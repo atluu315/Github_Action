@@ -26,6 +26,10 @@ jobs:
     #Install packages
     - name: Install packages
       run: npm install --save katalon-studio/katalon-agent#v1.4.0
+      
+    - name: Run Echo
+      shell: bash
+      run: echo $PATH
 
     # Runs Katalon Studio Action
     - name: Runs Katalon Studio Action Step
