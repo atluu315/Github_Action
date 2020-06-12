@@ -15,9 +15,6 @@ Please change to the latest github action version and your Input. <br>
 
 Setup API Key using Secret name :  API_KEY
 
-Katalon Github Action Marketplace link :  https://github.com/marketplace/actions/katalon-studio
-
-
 
 ## Example usage
 ```yaml
