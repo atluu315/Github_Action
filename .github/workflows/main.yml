@@ -29,7 +29,7 @@ jobs:
       
     - name: Run Echo
       shell: bash
-      run: cd $GITHUB_WORKSPACE/simple_project/simple_project
+      run: cd $GITHUB_WORKSPACE\\simple_project\\simple_project
 
     # Runs Katalon Studio Action
     - name: Runs Katalon Studio Action Step
